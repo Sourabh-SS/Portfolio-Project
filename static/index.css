@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Rubik:ital,wght@1,500&family=Ubuntu:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    min-width: 1000px;
+
+}
+.navbar ul{
+    display:flex;
+    background-color: rgb(85 200 169);
+    justify-content:center;
+}
+
+.navbar ul li{
+    
+    list-style:none;
+    padding: 20px 15px;
+    font-size:19px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    color:white;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+#home{
+
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    box-sizing: border-box;
+    background-color: rgb(136, 228, 199);
+    min-width: 1000px;
+}
+
+#home h1{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size:3rem;
+    color:white;
+
+    margin:6px 0px;
+}
+
+#home img{
+    margin-top:20px;
+    padding-bottom:40px;
+}
+
+#home h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size:2.5rem;
+    color:white
+}
+
+#navbtn{
+    margin:25px 0px;
+    border: 2px solid white;
+    color:white;
+    border-radius:20px;
+    width:130px;
+    height:40px;
+    cursor:pointer;
+    background-color: rgb(136, 228, 199);
+    font-family: 'Ubuntu', sans-serif;
+    font-size:15px;
+    
+}
+
+#navbtn:hover{
+    background-color: white;
+    color:black
+}
+
+#about{
+    display:flex;
+    min-width: 1000px;
+}
+
+
+.about_text{
+    display:flex;
+    flex-direction: column;
+    padding-right:78px;
+    margin-top:10px;
+}
+
+.about_text h1{
+    font-size: 2.5rem;
+    margin: 40px 0px;
+    margin-bottom: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.about_text p{
+    margin-bottom:20px;
+    font-family: 'Rubik', sans-serif;
+}
+.about_text li{
+    padding:10px;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+}
+
+
+.about_image img{
+    width: 378px;
+    margin: 0px 118px;
+    margin-top: 46px;
+}
+
+.git{
+    display:flex;
+
+}
+
+.git img{
+    width: 40px;
+    height: 25px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.git a{
+    
+    color:black;
+}
+
+#quality{
+    min-width: 1000px;
+}
+
+#quality h1{
+    text-align: center;
+    margin: 40px 0px;
+    font-family: 'Rubik', sans-serif;
+    font-size:2.3rem;
+}
+
+.edu{
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card{
+    border:2px solid red;
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 0px;
+    margin:0px 20px;
+    text-align: center;
+    background-color: rgb(226 223 234);
+    
+}
+
+.card:hover{
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    font-size:1.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card img{
+    width:8vw;
+    margin: 20px 0px;
+}
+
+.card li{
+    list-style: none;
+    margin: 3px 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#card2 img{
+    margin:30px 0px;
+}
+
+
+#skill h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 40px 0px;
+    margin-bottom: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(204, 236, 236);
+    margin-top:10px;
+    min-width: 1000px;
+
+}
+.skillbar{
+    display: flex;
+    flex-direction: column;
+    margin:8px 12px;
+    
+
+}
+.name{
+    margin-bottom: 8px;
+
+}
+.bar{
+    display:inline-block;
+    width:80vw;
+    padding: 1px 0px;
+    border:2px solid red;
+    border-radius:10px;
+
+}
+
+.bar div{
+    background-color: rgb(182 182 237);
+    position: relative;
+    animation: fillBars 2.5s 1;
+    padding:4px 0px;
+    border-radius:10px;
+}
+
+.bar div::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.bar div::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:100%;
+    }
+}
+
+footer{
+    width:100%;
+    padding:20px 0px;
+    text-align: center;
+    margin-top:20px;
+    background-color: rgb(216, 243, 237);
+}
+
+@media screen and (max-width:1050px){
+    .card{
+        width:100vw;
+    }
+
+    .card img{
+        width:121px;
+    }
+    .card h2{
+        font-size:1.6rem;
+    }
+}
